@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.blackboard.HelloWorldBuilder_-DescriptorImpl plugin="Blackboard@0.1-SNAPSHOT">
+  <useFrench>false</useFrench>
+</org.jenkinsci.plugins.blackboard.HelloWorldBuilder_-DescriptorImpl>

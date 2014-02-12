@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='Blackboard' version='0.1-SNAPSHOT'><l:dependency name='Blackboard' groupId='org.jenkins-ci.plugins' artifactId='Blackboard' version='0.1-SNAPSHOT' url='http://jenkins-ci.org/plugin/Blackboard/'><l:description/></l:dependency></l:dependencies>

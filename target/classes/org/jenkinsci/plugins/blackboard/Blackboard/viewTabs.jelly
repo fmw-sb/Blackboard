@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:cvt="/lib/customviewtabs">
+<!-- view tab bar -->
+	<l:tabBar>
+		<j:forEach var="v" items="${views}">
+			<cvt:custom-tab colour="${it.getTabColour()}" name="${v.viewName} : ${it.getTabLabel()} : ${it.getFailureCount(v)}" active="${v==currentView}" href="${rootURL}/${v.url}" />
+		</j:forEach>
+		<j:if test="${currentView.hasPermission(currentView.CREATE)}">
+			<l:tab name="+" href="${rootURL}/${currentView.owner.url}newView" active="false" title="${%New View}" />
+		</j:if>
+	</l:tabBar>
+</j:jelly>
